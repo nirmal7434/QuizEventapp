@@ -147,10 +147,10 @@ Quit the server with CTRL-BREAK.
 ### For End Users
 
 #### Register & Login
-1. Visit http://127.0.0.1:8000/users/register/
-2. Enter username, email, password
-3. Click "Register"
-4. You're automatically logged in!
+
+1. Enter username, email, password
+2. Click "Register"
+3. You have to login
 
 
 
