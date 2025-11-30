@@ -25,7 +25,7 @@
     </style>
 </head>
 <body class="min-h-screen bg-gray-50">
-    <!-- Navigation -->
+
     <nav class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -62,7 +62,7 @@
 {% endif %}
 
 
-    <!-- Hero Section -->
+
     <div class="hero-bg text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center">
@@ -88,9 +88,9 @@
         <p class="text-gray-600 max-w-2xl mx-auto">We provide the tools and community to help you learn effectively and connect with others.</p>
     </div>
 
-    <!-- Updated grid for 2 columns -->
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-        <!-- Feature 1 -->
+
         <div class="feature-card bg-white rounded-2xl shadow-lg p-8 text-center">
             <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-blue-100 flex items-center justify-center">
                 <i class="fas fa-question-circle text-blue-600 text-2xl"></i>
@@ -103,7 +103,7 @@
             </a>
         </div>
 
-        <!-- Feature 2 -->
+
         <div class="feature-card bg-white rounded-2xl shadow-lg p-8 text-center">
             <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-purple-100 flex items-center justify-center">
                 <i class="fas fa-calendar-check text-purple-600 text-2xl"></i>
@@ -117,11 +117,11 @@
         </div>
     </div>
 </div>
-<!-- Modal Background -->
+
 <div id="authModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 max-w-md rounded-xl shadow-lg p-6 relative">
 
-        <!-- Close Button -->
+
         <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl">
             &times;
         </button>
@@ -158,7 +158,7 @@
 <div id="registerModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white w-11/12 max-w-md rounded-xl shadow-lg p-6 relative">
 
-        <!-- Close -->
+
         <button id="closeRegisterBtn" class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl">
             &times;
         </button>
@@ -202,7 +202,6 @@
 </div>
 
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -256,7 +255,7 @@
     </footer>
 <script>
 
-   // LOGIN MODAL
+
 const loginModal = document.getElementById("authModal");
 const openLoginBtn = document.getElementById("openModalBtn");
 const closeLoginBtn = document.getElementById("closeModalBtn");
@@ -270,7 +269,7 @@ closeLoginBtn.addEventListener("click", () => {
 });
 
 
-// REGISTER MODAL
+
 const registerModal = document.getElementById("registerModal");
 const closeRegisterBtn = document.getElementById("closeRegisterBtn");
 
@@ -280,7 +279,7 @@ document.getElementById("openRegisterFromLogin").addEventListener("click", () =>
     registerModal.classList.remove("hidden"); // show register
 });
 
-// Close register modal
+
 closeRegisterBtn.addEventListener("click", () => {
     registerModal.classList.add("hidden");
 });
@@ -292,7 +291,7 @@ document.getElementById("openLoginFromRegister").addEventListener("click", () =>
 });
 
 
-// Close modals by clicking background
+
 window.addEventListener("click", (e) => {
     if (e.target === loginModal) loginModal.classList.add("hidden");
     if (e.target === registerModal) registerModal.classList.add("hidden");
